@@ -1,4 +1,4 @@
-require 'active_support/core_ext/hash/compact'
+require 'core_ext/hash/compact'
 
 class Build
   class Config
