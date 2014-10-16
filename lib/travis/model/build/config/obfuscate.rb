@@ -2,6 +2,9 @@ require 'active_support/core_ext/hash/except'
 require 'active_support/core_ext/array/wrap'
 require 'travis/secure_config'
 
+module Travis
+  module Model
+
 class Build
   class Config
     class Obfuscate < Struct.new(:config, :options)
@@ -49,5 +52,8 @@ class Build
           @key ||= options[:key_fetcher].call
         end
     end
+  end
+end
+
   end
 end

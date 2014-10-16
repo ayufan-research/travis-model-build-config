@@ -1,5 +1,8 @@
 require 'core_ext/hash/compact'
 
+module Travis
+  module Model
+
 class Build
   class Config
     class Env < Struct.new(:config, :options)
@@ -46,5 +49,8 @@ class Build
         end
       end
     end
+  end
+end
+
   end
 end

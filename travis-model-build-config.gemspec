@@ -20,5 +20,4 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake"
 
   spec.add_runtime_dependency "activesupport", "~> 4.0"
-  spec.add_runtime_dependency "addressable", "~> 2.3"
 end

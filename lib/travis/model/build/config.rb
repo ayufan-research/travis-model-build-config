@@ -4,6 +4,9 @@ require 'travis/model/build/config/matrix'
 require 'travis/model/build/config/obfuscate'
 require 'travis/model/build/config/os'
 
+module Travis
+  module Model
+
 class Build
   class Config
     NORMALIZERS = [Env, Language, OS]
@@ -66,5 +69,8 @@ class Build
     def obfuscate
       Obfuscate.new(config, options).run
     end
+  end
+end
+
   end
 end

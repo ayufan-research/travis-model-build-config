@@ -1,5 +1,8 @@
 require 'active_support/core_ext/array/wrap'
 
+module Travis
+  module Model
+
 class Build
   class Config
     class Language < Struct.new(:config, :options)
@@ -24,4 +27,8 @@ class Build
     end
   end
 end
+
+end
+end
+
 

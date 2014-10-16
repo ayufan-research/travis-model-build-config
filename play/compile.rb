@@ -10,7 +10,7 @@ require 'active_support/core_ext/object/try'
 
 config = YAML.load_file('compile.yaml')
 
-build_config = Build::Config.new(config).normalize
-build_config = Build::Config::Matrix.new(build_config)
+build_config = Travis::Model::Build::Config.new(config).normalize
+build_config = Travis::Model::Build::Config::Matrix.new(build_config)
 configs = build_config.expand
 puts(configs)

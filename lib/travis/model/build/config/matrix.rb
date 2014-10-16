@@ -1,6 +1,9 @@
 require 'active_support/core_ext/hash/except'
 require 'active_support/core_ext/array/wrap'
 
+module Travis
+  module Model
+
 class Build
   class Config
     class Matrix
@@ -94,5 +97,8 @@ class Build
           (ENV_KEYS | EXPANSION_KEYS_FEATURE).include?(key)
         end
     end
+  end
+end
+
   end
 end

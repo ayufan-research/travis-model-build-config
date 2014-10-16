@@ -1,3 +1,6 @@
+module Travis
+  module Model
+
 class Build
   class Config
     class OS
@@ -23,5 +26,8 @@ class Build
         OS_LANGUAGE_MAP.fetch(language, DEFAULT_OS)
       end
     end
+  end
+end
+
   end
 end
