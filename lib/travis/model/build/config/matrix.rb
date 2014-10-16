@@ -4,7 +4,7 @@ require 'active_support/core_ext/array/wrap'
 class Build
   class Config
     class Matrix
-      attr_reader :config, :options
+      attr_reader :config, :options, :expand_keys
 
       def initialize(config, options = {})
         @config = config || {}
