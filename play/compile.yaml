@@ -1,0 +1,19 @@
+rvm: 'ruby-head'
+env:
+  matrix:
+  - TEST=1
+  - TEST=2
+  global:
+  - GLOBAL=1
+addons:
+  deploy:
+    provider: heroku
+    api_key: abc
+    app: $HEROKU_APP_KEY
+matrix:
+  fast_finish: true
+  include:
+  - env: TEST=10
+    rvm: 2.0.0
+  allow_failures:
+  - rvm: ruby-head
