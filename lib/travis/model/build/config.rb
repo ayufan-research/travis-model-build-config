@@ -13,7 +13,7 @@ class Build
 
     DEFAULT_LANG = 'ruby'
 
-    ENV_KEYS = [:rvm, :gemfile, :env, :otp_release, :php, :node_js, :scala, :jdk, :python, :perl, :compiler, :go, :xcode_sdk, :xcode_scheme, :ghc, :ruby, :rust]
+    ENV_KEYS = [:rvm, :gemfile, :env, :otp_release, :php, :node_js, :scala, :jdk, :python, :perl, :compiler, :go, :xcode_sdk, :xcode_scheme, :xcode_version, :ghc, :ruby, :rust]
 
     EXPANSION_KEYS_FEATURE = [:os]
 
@@ -28,7 +28,7 @@ class Build
       'haskell'     => [:ghc],
       'java'        => [:jdk],
       'node_js'     => [:node_js],
-      'objective-c' => [:rvm, :gemfile, :xcode_sdk, :xcode_scheme],
+      'objective-c' => [:rvm, :gemfile, :xcode_sdk, :xcode_scheme, :xcode_version],
       'perl'        => [:perl],
       'php'         => [:php],
       'python'      => [:python],
